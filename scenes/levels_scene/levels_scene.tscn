@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://b4353ymoppx64"]
+
+[ext_resource type="Script" uid="uid://dx2jgps1tdo6f" path="res://scenes/levels_scene/levels_scene.gd" id="1_e3svi"]
+[ext_resource type="PackedScene" uid="uid://scub2hx7lfhi" path="res://scenes/fond/fond.tscn" id="1_mj3h2"]
+[ext_resource type="Texture2D" uid="uid://yd8pk81tk63c" path="res://assets/textures/niveaux_ligne.png" id="2_syfy7"]
+[ext_resource type="Resource" uid="uid://c2g0diq8a2k4s" path="res://data/parcours/parcour_defaut_2.tres" id="2_y3g65"]
+[ext_resource type="PackedScene" uid="uid://4kkrvipd25le" path="res://scenes/levels_scene/level.tscn" id="4_d2j7h"]
+[ext_resource type="Texture2D" uid="uid://dds72wh80nxx6" path="res://assets/textures/level_green.png" id="5_cyiyx"]
+[ext_resource type="Texture2D" uid="uid://cylr88voctvjl" path="res://assets/textures/level_star.png" id="6_niomq"]
+[ext_resource type="Texture2D" uid="uid://diekdae8rbeqh" path="res://assets/textures/level_red.png" id="8_iakm0"]
+
+[node name="LevelsScene" type="Control" unique_id=934461280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e3svi")
+parcour = ExtResource("2_y3g65")
+
+[node name="Fond" parent="." unique_id=1741056439 instance=ExtResource("1_mj3h2")]
+layout_mode = 1
+
+[node name="LevelsLine" type="TextureRect" parent="." unique_id=277025074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_syfy7")
+expand_mode = 1
+
+[node name="LevelsContainer" type="Control" parent="." unique_id=573557609]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level1" parent="LevelsContainer" unique_id=448084934 instance=ExtResource("4_d2j7h")]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 1
+anchor_left = 0.128
+anchor_top = 0.522
+anchor_right = 0.128
+anchor_bottom = 0.522
+
+[node name="Level2" parent="LevelsContainer" unique_id=620693792 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.26500002
+anchor_top = 0.731
+anchor_right = 0.26500002
+anchor_bottom = 0.731
+offset_left = -60.0
+offset_top = -60.00003
+offset_right = 60.0
+offset_bottom = 59.99997
+texture = ExtResource("5_cyiyx")
+level_nbr = 1
+lvl_type = 5
+
+[node name="Level3" parent="LevelsContainer" unique_id=735415985 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.43
+anchor_top = 0.897
+anchor_right = 0.43
+anchor_bottom = 0.897
+offset_left = -60.00003
+offset_top = -60.0
+offset_right = 59.99997
+offset_bottom = 60.0
+level_nbr = 2
+
+[node name="Level4" parent="LevelsContainer" unique_id=490041202 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.634
+anchor_top = 0.85800004
+anchor_right = 0.634
+anchor_bottom = 0.85800004
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+texture = ExtResource("5_cyiyx")
+level_nbr = 3
+lvl_type = 5
+
+[node name="Level5" parent="LevelsContainer" unique_id=15758759 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.822
+anchor_top = 0.753
+anchor_right = 0.822
+anchor_bottom = 0.753
+offset_left = -60.0
+offset_top = -60.00003
+offset_right = 60.0
+offset_bottom = 59.99997
+level_nbr = 4
+
+[node name="Level6" parent="LevelsContainer" unique_id=2039720673 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.93700004
+anchor_top = 0.51100004
+anchor_right = 0.93700004
+anchor_bottom = 0.51100004
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+texture = ExtResource("8_iakm0")
+level_nbr = 5
+lvl_type = 3
+
+[node name="Level7" parent="LevelsContainer" unique_id=252173900 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.83900005
+anchor_top = 0.26500002
+anchor_right = 0.83900005
+anchor_bottom = 0.26500002
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+level_nbr = 6
+
+[node name="Level8" parent="LevelsContainer" unique_id=515948473 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.666
+anchor_top = 0.395
+anchor_right = 0.666
+anchor_bottom = 0.395
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.000015
+level_nbr = 7
+
+[node name="Level9" parent="LevelsContainer" unique_id=1991612191 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.47200003
+anchor_top = 0.59900004
+anchor_right = 0.47200003
+anchor_bottom = 0.59900004
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+texture = ExtResource("5_cyiyx")
+level_nbr = 8
+lvl_type = 5
+
+[node name="Level10" parent="LevelsContainer" unique_id=1223299484 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.45000002
+anchor_top = 0.279
+anchor_right = 0.45000002
+anchor_bottom = 0.279
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 60.0
+offset_bottom = 60.0
+level_nbr = 9
+
+[node name="Level11" parent="LevelsContainer" unique_id=1432979995 instance=ExtResource("4_d2j7h")]
+layout_mode = 1
+anchor_left = 0.20600002
+anchor_top = 0.29900002
+anchor_right = 0.20600002
+anchor_bottom = 0.29900002
+offset_left = -60.31201
+offset_top = -59.752014
+offset_right = 59.68799
+offset_bottom = 60.247986
+texture = ExtResource("6_niomq")
+level_nbr = 10
+lvl_type = 5
+dernier_niv = true

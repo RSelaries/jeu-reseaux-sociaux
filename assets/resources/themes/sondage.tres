@@ -1,0 +1,16 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://c4r0qfcunhgmj"]
+
+[ext_resource type="FontFile" uid="uid://bksgmstau0w3x" path="res://assets/fonts/poppins/Poppins-Bold.ttf" id="1_sksee"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5c1dn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sg1ph"]
+
+[resource]
+LineEdit/colors/caret_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_placeholder_color = Color(0, 0, 0, 0.6)
+LineEdit/font_sizes/font_size = 30
+LineEdit/fonts/font = ExtResource("1_sksee")
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_5c1dn")
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_sg1ph")

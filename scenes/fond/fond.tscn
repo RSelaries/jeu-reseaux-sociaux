@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://scub2hx7lfhi"]
+
+[ext_resource type="Texture2D" uid="uid://erkdeb02hwjo" path="res://assets/textures/gradient_fond.tres" id="1_ennk8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wdqv1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.09985284, 0.09985284, 0.09985284, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gh8di"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.09985284, 0.09985284, 0.09985284, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_detail = 5
+
+[node name="Fond" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ennk8")
+
+[node name="MargesGrille" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="PanelContainer" type="PanelContainer" parent="MargesGrille"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wdqv1")
+
+[node name="MarginContainer" type="MarginContainer" parent="MargesGrille/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PanelContainer2" type="PanelContainer" parent="MargesGrille/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gh8di")

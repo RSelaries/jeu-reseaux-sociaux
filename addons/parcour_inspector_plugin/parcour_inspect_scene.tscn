@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0iikgaoyhev8"]
+
+[ext_resource type="Script" uid="uid://cet50j5ty820j" path="res://addons/parcour_inspector_plugin/parcour_inspect_scene.gd" id="1_sfviq"]
+
+[node name="ParcourInspectScene" type="VBoxContainer"]
+offset_right = 146.0
+offset_bottom = 39.0
+script = ExtResource("1_sfviq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Set All To"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SetAllOptions" type="OptionButton" parent="HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+clip_text = true
+fit_to_longest_item = false
+
+[node name="SetAllButton" type="Button" parent="HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SET"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2

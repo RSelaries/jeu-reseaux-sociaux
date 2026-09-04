@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="Parcour" format=3 uid="uid://b13ulymw7naku"]
+
+[ext_resource type="Script" uid="uid://cbpv4girgwt3q" path="res://data/parcours/level_resource.gd" id="1_2fwtc"]
+[ext_resource type="Script" uid="uid://dhdagssr6snli" path="res://data/parcours/parcour_resource.gd" id="2_oib1e"]
+
+[sub_resource type="Resource" id="Resource_2fwtc"]
+script = ExtResource("1_2fwtc")
+level_type = 2
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[sub_resource type="Resource" id="Resource_oib1e"]
+script = ExtResource("1_2fwtc")
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[sub_resource type="Resource" id="Resource_qpy3y"]
+script = ExtResource("1_2fwtc")
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[sub_resource type="Resource" id="Resource_dx0wm"]
+script = ExtResource("1_2fwtc")
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[sub_resource type="Resource" id="Resource_3q0qa"]
+script = ExtResource("1_2fwtc")
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[sub_resource type="Resource" id="Resource_aaxmf"]
+script = ExtResource("1_2fwtc")
+metadata/_custom_type_script = "uid://cbpv4girgwt3q"
+
+[resource]
+script = ExtResource("2_oib1e")
+niveaux = Array[ExtResource("1_2fwtc")]([SubResource("Resource_2fwtc"), SubResource("Resource_oib1e"), SubResource("Resource_qpy3y"), SubResource("Resource_dx0wm"), SubResource("Resource_3q0qa"), SubResource("Resource_aaxmf"), SubResource("Resource_aaxmf"), SubResource("Resource_aaxmf"), SubResource("Resource_aaxmf"), SubResource("Resource_aaxmf"), SubResource("Resource_aaxmf")])
+metadata/_custom_type_script = "uid://dhdagssr6snli"
