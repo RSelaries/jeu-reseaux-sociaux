@@ -1,0 +1,143 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8gykulw8b7gx"]
+
+[ext_resource type="Script" uid="uid://ci875fw7xlfv2" path="res://autoloads/scores/score_scene.gd" id="1_6g6nf"]
+[ext_resource type="FontFile" uid="uid://c4mk6pmtpo7sq" path="res://assets/fonts/poppins/Poppins-Black.ttf" id="2_i2xdv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ohdw"]
+font = ExtResource("2_i2xdv")
+font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2xdv"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.09985284, 0.09985284, 0.09985284, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i2xdv"]
+content_margin_left = 10.0
+content_margin_top = 0.0
+content_margin_right = 10.0
+content_margin_bottom = 0.0
+
+[node name="ScoreScene" type="CanvasLayer"]
+script = ExtResource("1_6g6nf")
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="Famille1Nom" type="Label" parent="Control/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 1
+label_settings = SubResource("LabelSettings_6ohdw")
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i2xdv")
+
+[node name="Scores" type="Control" parent="Control/MarginContainer/HBoxContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Famille1Progress" type="ColorRect" parent="Control/MarginContainer/HBoxContainer/PanelContainer/Scores"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+color = Color(0.9254902, 0.33333334, 0.4117647, 1)
+
+[node name="Famille1ScoreLabel" type="Label" parent="Control/MarginContainer/HBoxContainer/PanelContainer/Scores/Famille1Progress"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 11.0
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i2xdv")
+text = "0"
+label_settings = SubResource("LabelSettings_6ohdw")
+vertical_alignment = 1
+
+[node name="Famille2Progress" type="ColorRect" parent="Control/MarginContainer/HBoxContainer/PanelContainer/Scores"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+color = Color(0.9647059, 0.78039217, 0.105882354, 1)
+
+[node name="Famille2ScoreLabel" type="Label" parent="Control/MarginContainer/HBoxContainer/PanelContainer/Scores/Famille2Progress"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -11.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i2xdv")
+text = "0"
+label_settings = SubResource("LabelSettings_6ohdw")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Famille2Nom" type="Label" parent="Control/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_vertical = 1
+label_settings = SubResource("LabelSettings_6ohdw")
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+uppercase = true

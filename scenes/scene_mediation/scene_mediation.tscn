@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://bejkcppiuxi0s"]
+
+[ext_resource type="Theme" uid="uid://ba1ieuak0dh5j" path="res://assets/resources/themes/theme_defaut.tres" id="1_fh0xv"]
+[ext_resource type="Script" uid="uid://smo8lub3tcvg" path="res://scenes/scene_mediation/scene_mediation.gd" id="2_12gw3"]
+
+[node name="SceneMediation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fh0xv")
+script = ExtResource("2_12gw3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6431373)
+
+[node name="TextMediation" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.5
+anchor_right = 0.91400003
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 25
+theme_override_font_sizes/bold_italics_font_size = 25
+theme_override_font_sizes/italics_font_size = 25
+theme_override_font_sizes/mono_font_size = 25
+bbcode_enabled = true
+text = "DdzqdqDzqd Dzqd [b]Gras[/b] [i][b]gras italique [/b]italique"
+fit_content = true
+vertical_alignment = 1

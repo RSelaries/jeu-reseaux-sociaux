@@ -1,0 +1,7 @@
+res://scenes/questions_templates/petit_bac/PetitBacTemplate.tscn
+res://assets/resources/themes/theme_defaut.tres
+res://data/parcours/parcour_defaut.tres
+res://assets/textures/gradient_fond.tres
+res://data/parcours/parcour_defaut_2.tres
+res://assets/textures/gradient_question_type.tres
+res://assets/resources/shaders/colorrect_blur.gdshader
