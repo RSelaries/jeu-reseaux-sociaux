@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cfacdvwshxt3v"]
+[gd_scene format=3 uid="uid://cfacdvwshxt3v"]
 
 [ext_resource type="Script" uid="uid://b4mr6647bbctf" path="res://scenes/questions_templates/qcm_question/qcm_question.gd" id="1_uryup"]
 [ext_resource type="Theme" uid="uid://ba1ieuak0dh5j" path="res://assets/resources/themes/theme_defaut.tres" id="1_yg4bk"]
@@ -41,7 +41,7 @@ font = ExtResource("12_g6gmi")
 font_size = 43
 font_color = Color(0, 0, 0, 1)
 
-[node name="QcmTemplate" type="Control" node_paths=PackedStringArray("fond")]
+[node name="QcmTemplate" type="Control" unique_id=1931264562 node_paths=PackedStringArray("fond")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -52,10 +52,10 @@ theme = ExtResource("1_yg4bk")
 script = ExtResource("1_uryup")
 fond = NodePath("Fond")
 
-[node name="Fond" parent="." instance=ExtResource("3_yg4bk")]
+[node name="Fond" parent="." unique_id=1964192632 instance=ExtResource("3_yg4bk")]
 layout_mode = 1
 
-[node name="TitreLabel" type="Label" parent="."]
+[node name="TitreLabel" type="Label" parent="." unique_id=289742854]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -74,7 +74,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="ArrangementBoutons" type="TabContainer" parent="."]
+[node name="ArrangementBoutons" type="TabContainer" parent="." unique_id=1404287958]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -92,12 +92,12 @@ current_tab = 0
 tabs_visible = false
 script = ExtResource("5_504j6")
 
-[node name="ReponsesCourtes" type="Control" parent="ArrangementBoutons"]
+[node name="ReponsesCourtes" type="Control" parent="ArrangementBoutons" unique_id=1994002448]
 layout_mode = 2
 theme = ExtResource("1_yg4bk")
 metadata/_tab_index = 0
 
-[node name="ReponseCourte1" type="Button" parent="ArrangementBoutons/ReponsesCourtes"]
+[node name="ReponseCourte1" type="Button" parent="ArrangementBoutons/ReponsesCourtes" unique_id=2086986483]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -109,7 +109,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "A. Réponse 1"
 
-[node name="ReponseCourte2" type="Button" parent="ArrangementBoutons/ReponsesCourtes"]
+[node name="ReponseCourte2" type="Button" parent="ArrangementBoutons/ReponsesCourtes" unique_id=1339547303]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -121,7 +121,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "B. Réponse 2"
 
-[node name="ReponseCourte3" type="Button" parent="ArrangementBoutons/ReponsesCourtes"]
+[node name="ReponseCourte3" type="Button" parent="ArrangementBoutons/ReponsesCourtes" unique_id=1426309579]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -134,7 +134,7 @@ grow_vertical = 2
 theme_override_styles/disabled = ExtResource("5_sbuat")
 text = "C. Réponse 3"
 
-[node name="ReponseCourte4" type="Button" parent="ArrangementBoutons/ReponsesCourtes"]
+[node name="ReponseCourte4" type="Button" parent="ArrangementBoutons/ReponsesCourtes" unique_id=575145650]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -146,12 +146,12 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "D. Réponse 4"
 
-[node name="ReponsesLongues" type="Control" parent="ArrangementBoutons"]
+[node name="ReponsesLongues" type="Control" parent="ArrangementBoutons" unique_id=485312405]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="ReponseLongue1" type="Button" parent="ArrangementBoutons/ReponsesLongues"]
+[node name="ReponseLongue1" type="Button" parent="ArrangementBoutons/ReponsesLongues" unique_id=310505229]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -164,7 +164,7 @@ theme_override_font_sizes/font_size = 25
 text = "A. Réponse 1"
 alignment = 0
 
-[node name="ReponseLongue2" type="Button" parent="ArrangementBoutons/ReponsesLongues"]
+[node name="ReponseLongue2" type="Button" parent="ArrangementBoutons/ReponsesLongues" unique_id=1123561773]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -180,7 +180,7 @@ theme_override_font_sizes/font_size = 25
 text = "B. Réponse 2"
 alignment = 0
 
-[node name="ReponseLongue3" type="Button" parent="ArrangementBoutons/ReponsesLongues"]
+[node name="ReponseLongue3" type="Button" parent="ArrangementBoutons/ReponsesLongues" unique_id=1525708588]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -196,7 +196,7 @@ theme_override_font_sizes/font_size = 25
 text = "C. Réponse 3"
 alignment = 0
 
-[node name="ReponseLongue4" type="Button" parent="ArrangementBoutons/ReponsesLongues"]
+[node name="ReponseLongue4" type="Button" parent="ArrangementBoutons/ReponsesLongues" unique_id=1917172398]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -212,7 +212,7 @@ theme_override_font_sizes/font_size = 25
 text = "D. Réponse 4"
 alignment = 0
 
-[node name="QuestionType" type="PanelContainer" parent="."]
+[node name="QuestionType" type="PanelContainer" parent="." unique_id=1651828567]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 98.0
@@ -220,18 +220,18 @@ offset_right = 123.0
 offset_bottom = 158.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_kgnjr")
 
-[node name="Label" type="Label" parent="QuestionType"]
+[node name="Label" type="Label" parent="QuestionType" unique_id=683631183]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxTexture_8vhto")
 text = "QCM"
 label_settings = SubResource("LabelSettings_jjihf")
 metadata/_edit_lock_ = true
 
-[node name="Decos" parent="." instance=ExtResource("5_obutb")]
+[node name="Decos" parent="." unique_id=993390231 instance=ExtResource("5_obutb")]
 layout_mode = 1
 metadata/_edit_lock_ = true
 
-[node name="QuestionTimer" type="Timer" parent="."]
+[node name="QuestionTimer" type="Timer" parent="." unique_id=1351638678]
 wait_time = 5.0
 
 [connection signal="timeout" from="QuestionTimer" to="." method="_on_question_timer_timeout"]
